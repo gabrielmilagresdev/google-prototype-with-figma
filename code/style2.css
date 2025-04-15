@@ -1,0 +1,116 @@
+.icon{
+    height: 60px;
+}
+#square{
+    width: 700px;
+    background-color: #ECECEC;
+    margin: 0 auto;
+    cursor:text;
+    margin-top:10px;
+}
+.circleborder{
+    border-radius: 15px;
+    height: 40px;
+}
+.buttonsearch{
+    all:unset;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 20px;
+    margin-left: 0px;
+}
+.buttonsearch img{  
+    width: 35px;
+    border-radius: 12px;
+    margin-top: 3px;
+    margin-left: 45px;
+}
+.buttonsearch img:hover{
+    filter:brightness(0.8);
+}
+.buttonsearch img:active{
+    filter:brightness(0.5);
+}
+#searchhere{
+    all:unset;
+    width:600px;
+    margin-left: 10px;
+    margin-bottom:3px;
+    font-size: 25px;
+    font-family: 'Calibri','Arial','sans-serif';
+}
+.line{
+    display:flex;
+    width:900px;    
+}
+.sign{
+    width: 180px;
+    height: 42px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    background-color:#1976D2;
+    cursor:pointer;
+    margin-left:15px;
+
+}
+.sign:hover{
+    filter:brightness(1.2);
+}
+.sign:active{
+    filter:brightness(1.5);
+}
+.definitions{
+    width:50px;
+    margin-bottom: 20px;
+    margin-left: 500px;
+    cursor: pointer
+}
+.definitions:hover{
+    filter:brightness(1.3);
+}
+.definitions:active{
+    filter:brightness(1.5);
+}
+.line2{
+    display:flex;
+}
+.in{
+    all:unset;
+    font-family: 'Calibri','arial','sans-serif';
+    color:white;
+    font-size: 25px;
+    margin-left: 54px;
+    margin-top: 5px;
+}
+.linksign{
+    all:unset;
+}
+#box{
+    display: none;
+    width: 700px;
+    height: 250px;
+    background-color: #f3f3f3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 68px;
+}  
+.border90 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 80px;
+}
+.navegate{
+    all:unset;
+    font-size: 25px;
+    font-family: 'Calibri','Arial','sans-serif';
+    color:#000000;
+    opacity: 50%;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    cursor:pointer;
+}
+.navegate:hover{
+    color:rgb(104, 104, 104)
+}

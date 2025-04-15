@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <div class="line2">
+        <img class="icon" src="C:\Users\ghami\Desktop\USP\htmlarchives\googlefigma\img\googleicon.png" alt="Icone do Google"/>
+        <div id="square" class="circleborder">
+            <div class="line">
+                <input id="searchhere" type="text" placeholder="Search here...">
+                <a href="./search.html">   
+                    <button class="buttonsearch">
+                        <img src="C:\Users\ghami\Desktop\USP\htmlarchives\googlefigma\img\searchbutton.png" alt="Lupa do Google"/>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <a href="config.html">
+            <img class="definitions" src="C:\Users\ghami\Desktop\USP\htmlarchives\googlefigma\img\definitions.png" alt="Botão de Config"/>
+        </a>
+        <div class="sign" alt="Botão de Login">
+            <a href="signin.html" class="linksign">
+                <button class="in" alt="Apertar para logar">
+                    Sign in
+                </button>
+            </a>
+        </div>
+    </div>
+    <a href="index.html" class="linksign">
+        <div id="box">
+                <button class="navegate">CRM Information Systems</button>
+                <div></div>
+                <button class="navegate">Quantum Computation</button>
+                <div></div>
+                <button class="navegate">Data Science</button>
+                <div></div>
+                <button class="navegate">Science Computation</button>
+                <div></div>
+                <button class="navegate">Django Web</button>
+                <div></div>
+                <button class="navegate">Santa Rita do Sapucaí - MG</button>
+        </div>
+    </a>
+        <script>
+const input = document.getElementById("searchhere");
+    const box = document.getElementById("box");
+    const square = document.getElementById("square");
+
+    input.addEventListener("input", () => {
+      if (input.value.trim().length > 0) {
+        box.style.display = "block";
+        square.classList.add("border90");
+      } else {
+        box.style.display = "none";
+        square.classList.remove("border90");
+      }
+    });
+        </script>
+</body>
+</html>

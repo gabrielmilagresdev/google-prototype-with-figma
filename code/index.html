@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Prototype</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="line2">
+        <a href="config.html">
+            <img class="definitions" src="C:\Users\ghami\Desktop\USP\htmlarchives\googlefigma\img\definitions.png" alt="Botão de Config"/>
+        </a>
+        <div class="sign" alt="Botão de Login">
+            <a href="signin.html" class="linksign">
+                <button class="in" alt="Apertar para logar">
+                    Sign in
+                </button>
+            </a>
+        </div>
+    </div>
+    <img class="logo" src="C:\Users\ghami\Desktop\USP\htmlarchives\googlefigma\img\googlesearch.png" alt="Escrita do Google"/>
+    <div id="square" class="circleborder">
+        <div class="line">
+            <input id="searchhere" type="text" placeholder="Search here...">
+                <button id="buttonsearch">
+                    <img src="C:\Users\ghami\Desktop\USP\htmlarchives\googlefigma\img\searchbutton.png" alt="Lupa do Google"/>
+                </button>
+        </div>
+    </div>
+    <div id="box">
+        <a href="search.html" class="linksign">
+            <button class="navegate">CRM Information Systems</button>
+            <div></div>
+            <button class="navegate">Quantum Computation</button>
+            <div></div>
+            <button class="navegate">Data Science</button>
+            <div></div>
+            <button class="navegate">Science Computation</button>
+            <div></div>
+            <button class="navegate">Django Web</button>
+            <div></div>
+            <button class="navegate">Santa Rita do Sapucaí - MG</button>
+        </a>
+    </div>
+    <script>
+    const input = document.getElementById("searchhere");
+    const box = document.getElementById("box");
+    const square = document.getElementById("square");
+    const botao = document.getElementById("buttonsearch");
+    let clicado = false;
+
+    input.addEventListener("input", () => {
+      if (input.value.trim().length > 0) {
+        box.style.display = "block";
+        square.classList.add("border90");
+      } else {
+        box.style.display = "none";
+        square.classList.remove("border90");
+      }
+    });
+  botao.addEventListener("click", () => {
+    clicado = true;
+  });
+    </script>
+</body>
+</html>
